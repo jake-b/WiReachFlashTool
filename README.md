@@ -61,8 +61,11 @@ To use this tool:
 1. Place Fpro.IMG in the same directory as the tool.
 2. Run the tool with the -f parameter to select the flash type and the
 -p parameter to select a serial port to use.  Include the IMF file
-you wish to flash.
-3. Croass your fingers and hope this doens't brick your tool.
+you wish to flash.  For example:
+
+     python3 wireach_flash.py -f 4 -p /dev/tty.wchusbserial1420  i2128d811d29BCOM.imf
+
+3. Cross your fingers and hope this doens't brick your module.
 4. Be prepared to use the iChipConfig Utility mentioned earllier to 
 fix (re-apply firwmare, bootloader) when this tool likely bricks your
 module.
